@@ -50,6 +50,7 @@ class ProblemServiceTest {
     fun testCheckTestcase() {
         val testcase = TestCase("test", "Hello World!")
         val result = service.checkTestcase(testcase, "Hello World!")
+        assertTrue(result)
     }
 
     @Test
