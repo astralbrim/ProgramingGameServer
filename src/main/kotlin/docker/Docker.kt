@@ -13,7 +13,7 @@ import kotlin.time.toJavaDuration
 class Docker {
     private var dockerClient: DockerClientImpl
 
-    constructor (host: String = "unix:///var/run/docker.sock") {
+    constructor (host: String) {
         dockerClient = DockerClientImpl(host)
     }
 

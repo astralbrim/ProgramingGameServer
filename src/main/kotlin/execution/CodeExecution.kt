@@ -2,7 +2,7 @@ package com.github.axelasports.execution
 import com.github.axelasports.docker.Docker
 
 class CodeExecution {
-    private val docker = Docker()
+    private val docker = Docker(System.getenv("DOCKER_HOST") ?: "unix:///var/run/docker.sock")
 
     private val supportedLanguages: Map<SupportedLanguage, LanguageConfig> =
         mapOf(
