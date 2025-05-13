@@ -14,7 +14,6 @@ class ProblemService {
         code: String,
     ): Boolean {
         problem.testcases.forEach { testcase ->
-            println("Testing ${testcase.input} with ${testcase.output}")
             val result = execution.executeCode(language, code, testcase.input)
             if (!checkTestcase(testcase, result)) return false
         }
