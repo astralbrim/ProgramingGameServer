@@ -35,14 +35,14 @@ class ProblemServiceTest {
             Problem(
                 1,
                 "Hello World!",
-                "改行なしの Hello World! という文字列を出力してください",
+                "Hello World! という文字列を出力してください",
                 listOf(
                     Example(null, null),
                 ),
                 listOf(TestCase("test", "Hello World!"), TestCase("test2", "Hello World!")),
             )
 
-        val result = service.tryProblem(problem, SupportedLanguage.PYTHON, "print(\"Hello World!\", end=\"\")")
+        val result = service.tryProblem(problem, SupportedLanguage.PYTHON, "print(\"Hello World!\")")
         assertTrue(result)
     }
 

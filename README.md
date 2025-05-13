@@ -39,7 +39,7 @@
 
     3.1. 例1
     ```shell
-    $ curl -X POST -H "Content-Type: application/json"    -d '{"language": "python", "code": "print(\"Hello World\"}'  localhost:8080/problem/1/try
+    $ curl -X POST -H "Content-Type: application/json"    -d '{"language": "python", "code": "print(\"Hello World!\"}'  localhost:8080/problem/1/try
     ```
     ```
     正解！
